@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#home #nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 55px;
+}
+
+#home #nav i {
+    display: none;
+}
+
+#home #nav #nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+
+#home #nav #nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#home #nav img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#home #nav img:hover {
+    border: 2px solid #fff;
+}
+
+#nav-links-two {
+    height: 0;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    visibility: hidden;
+}
+
+#nav-links-two #links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    border: 4px solid #fff;
+}
+
+#nav-links-two #links-list li {
+    width: 100%;
+    padding: 7.5px;
+}
+#nav-links-two #links-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#nav-links-two li:hover {
+    background-color: red;
+    color: #000;
+} 
+
+#fixed-nav-links-two {
+    height: 0;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+}
+
+#fixed-nav-links-two #links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    border: 4px solid #fff;
+}
+
+#fixed-nav-links-two #links-list li {
+    width: 100%;
+    padding: 7.5px;
+}
+#fixed-nav-links-two #links-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#fixed-nav-links-two li:hover {
+    background-color: red;
+    color: #fff;
+} 
+
+
+#home #fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 55px;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    z-index: 100;
+}
+
+#home #fixed-nav #nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+
+#home #fixed-nav #nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#home #fixed-nav img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#home #fixed-nav img:hover {
+    border: 2px solid #fff;
+}
+
+#home #fixed-nav i {
+    display: none;
+}
+
+#home #content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+}
+
+#home #content h1 {
+    font-size: 5vmax;
+    font-weight: 900;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+}
+
+#home #content p {
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+#home #content a {
+    text-decoration: none;
+    color: #fff;
+    border: 2.5px solid #fff;
+    padding: 5px 7.5px;
+}
+
+#home #content a:hover {
+    background-color: #fff;
+    color: rgb(10, 27, 88);
+    border: 2px solid rgb(10, 27, 88);
+}
+
+#about, #services, #tours {
+    /* height: 79.75%; */
+    width: 100%;
+    background-color: rgb(214, 229, 229);
+    /* text-align: center; */
+}
+
+#about h1, #services h1, #tours h1 {
+    font-size: 3.75vmax;
+}
+
+#about span, #services span, #tours span {
+    color: palevioletred;
+}
+
+#services {
+    background-color: antiquewhite;
+}
+
+#copyrights {
+    height: 20%;
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    margin: 0;
+}
+
+#copyrights h3 {
+    font-size: 3.5vmax;
+}
+
+#copyrights i {
+    font-size: 2.5vmax;
+    margin: 10px;
+}
+
+#copyrights #contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#back-button {
+    width: fit-content;
+    background-color: palevioletred;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    animation: bounce 2s ease 0s infinite;
+    position: fixed;
+    top: 650px;
+    right: 5%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#back-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.35);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1300px) {
+    /* #home #nav {
+        padding: 5px 20px;
+    } */
+
+    #home #nav img {
+        height: 65px;
+        width: 65px;
+    }
+
+    /* #home #nav #nav-links {
+        display: none;
+    }
+
+    #home #nav i {
+        display: inline;
+        font-size: 35px;
+        font-weight: 900;
+        cursor: pointer;
+    } */
+
+    #nav-links-two {
+        visibility: visible;
+    }
+
+    #fixed-nav-links-two {
+        visibility: visible;
+    }
+
+    #home #fixed-nav {
+        padding: 0px 20px;
+    }
+
+    #home #fixed-nav img {
+        height: 55px;
+        width: 55px;
+    }
+
+    #home #fixed-nav #nav-links {
+        display: none;
+    }
+
+    #home #fixed-nav i {
+        display: inline;
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+        color: #000;
+    }
+
+    #home #content {
+        width: 100%;
+    }
+
+    #home #content h1 {
+        font-size: 60px;
+        font-weight: 900;
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+    }
+
+    #back-button {
+        top: 850px;
+    }
+
+    
+    
+}
+
+@media (max-width: 800px) {
+
+    #home #nav {
+        padding: 5px 20px;
+    }
+
+    #home #nav img {
+        height: 55px;
+        width: 55px;
+    }
+
+    #home #nav #nav-links {
+        display: none;
+    }
+
+    #home #nav i {
+        display: inline;
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    #home #fixed-nav {
+        padding: 0px 20px;
+    }
+
+    #home #fixed-nav img {
+        height: 55px;
+        width: 55px;
+    }
+
+    #home #fixed-nav #nav-links {
+        display: none;
+    }
+
+    #home #fixed-nav i {
+        display: inline;
+        font-size: 25px;
+        font-weight: 900;
+        cursor: pointer;
+        color: #000;
+    }
+
+    #fixed-nav-links-two {
+        visibility: visible;
+    }
+
+    #home #content {
+        width: 100%;
+    }
+
+    #home #content h1 {
+        font-size: 50px;
+        font-weight: 900;
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+    }
+
+    #back-button {
+        top: 575px;
+    }
+
+    #about, #services, #tours {
+        height: 95%;
+        width: 100%;
+        background-color: rgb(214, 229, 229);
+        text-align: center;
+    }
+
+    #nav-links-two {
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 370px) {
+    #home #content h1 {
+        font-size: 45px;
+        font-weight: 900;
+        -webkit-text-stroke-color: #fff;
+        -webkit-text-stroke-width: 1px;
+        color: transparent;
+    }
+
+    #back-button {
+        top: 650px;
+    }
+
+    #nav-links-two {
+        visibility: visible;
+    }
+
+    #fixed-nav-links-two {
+        visibility: visible;
+    }
+}
